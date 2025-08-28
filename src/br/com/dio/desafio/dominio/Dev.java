@@ -26,8 +26,8 @@ public class Dev {
         }
     }
 
-    public void calcularTotalXp() {
-        this.conteudosConcluidos.stream().mapToDouble(Conteudo::calcularXp).sum();
+    public double calcularTotalXp() {
+        return this.conteudosConcluidos.stream().mapToDouble(Conteudo::calcularXp).sum();
     }
 
 
